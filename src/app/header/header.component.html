@@ -7,20 +7,20 @@
         <span class="logo">SKOOLE</span>
       </button>
       <div *ngIf="!deviceXs">
-        <button mat-button>Cours</button>
-        <button mat-button>Exercices</button>
-        <button mat-button>Examens</button>
-        <button mat-button>Contacts</button>
-        <button mat-button>Aide</button>
+        <button mat-button>COURS</button>
+        <button mat-button>EXERCICES</button>
+        <button mat-button>EXAMENS</button>
+        <button mat-button>CONTACTS</button>
+        <button mat-button>AIDE</button>
       </div>
     </div>
 
     <!-- les boutons de connection et d'inscription -->
     <div>
-      <button mat-button *ngIf="!deviceXs">
+      <button mat-raised-button color="accent" *ngIf="!deviceXs">
         Se connecter
       </button>
-      <button mat-button *ngIf="!deviceXs">
+      <button mat-raised-button color="accent" *ngIf="!deviceXs">
         S'inscrire
       </button>
       <button mat-icon-button *ngIf="deviceXs">
