@@ -1,1 +1,39 @@
-<p *ngIf="deviceXs">header works!</p>
+<mat-toolbar color="primary">
+  <mat-toolbar-row fxLayoutAlign="space-between center">
+    <!-- les elements du menu header -->
+    <div fxLayout="row">
+      <button mat-button>
+        <mat-icon>home</mat-icon>
+        <span class="logo">SKOOLE</span>
+      </button>
+      <div *ngIf="!deviceXs">
+        <button mat-button>Cours</button>
+        <button mat-button>Exercices</button>
+        <button mat-button>Examens</button>
+        <button mat-button>Contacts</button>
+        <button mat-button>Aide</button>
+      </div>
+    </div>
+
+    <!-- les boutons de connection et d'inscription -->
+    <div>
+      <button mat-button *ngIf="!deviceXs">
+        Se connecter
+      </button>
+      <button mat-button *ngIf="!deviceXs">
+        S'inscrire
+      </button>
+      <button mat-icon-button *ngIf="deviceXs">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+    </div>
+  </mat-toolbar-row>
+
+  <mat-toolbar-row *ngIf="deviceXs" fxLayoutAlign="space-between end">
+    <button mat-button>Cours</button>
+    <button mat-button>Exercices</button>
+    <button mat-button>Examens</button>
+    <button mat-button>Contacts</button>
+    <button mat-button>Aide</button>
+  </mat-toolbar-row>
+</mat-toolbar>

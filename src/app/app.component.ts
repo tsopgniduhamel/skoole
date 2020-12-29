@@ -15,7 +15,8 @@ export class AppComponent implements OnInit, OnDestroy {
 
   constructor(private mediaObserver: MediaObserver) {}
   ngOnInit() {
-    // le mediaSub ici est juste une variable qui permet de lire la taille de media sur lequel le site est affiché
+    // le mediaSub ici est juste une variable qui permet de lire
+    // la taille de media sur lequel le site est affiché
     this.mediaSub = this.mediaObserver.media$.subscribe(
       (result: MediaChange) => {
         console.log(result.mqAlias);
