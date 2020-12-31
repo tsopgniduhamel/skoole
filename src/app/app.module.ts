@@ -14,9 +14,14 @@ import { FooterComponent } from './footer/footer.component';
 import { MainComponent } from './main/main.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { CoursComponent } from './cours/cours.component';
+import { ExercicesComponent } from './exercices/exercices.component';
+import { ExamensComponent } from './examens/examens.component';
+import { ContactsComponent } from './contacts/contacts.component';
+import { AideComponent } from './aide/aide.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent, MainComponent, HomeComponent, PageNotFoundComponent],
+  declarations: [AppComponent, HeaderComponent, FooterComponent, MainComponent, HomeComponent, PageNotFoundComponent, CoursComponent, ExercicesComponent, ExamensComponent, ContactsComponent, AideComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
