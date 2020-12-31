@@ -19,9 +19,10 @@ import { ExercicesComponent } from './exercices/exercices.component';
 import { ExamensComponent } from './examens/examens.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { AideComponent } from './aide/aide.component';
+import { CoursDetailsComponent } from './cours-details/cours-details.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent, MainComponent, HomeComponent, PageNotFoundComponent, CoursComponent, ExercicesComponent, ExamensComponent, ContactsComponent, AideComponent],
+  declarations: [AppComponent, HeaderComponent, FooterComponent, MainComponent, HomeComponent, PageNotFoundComponent, CoursComponent, ExercicesComponent, ExamensComponent, ContactsComponent, AideComponent, CoursDetailsComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
