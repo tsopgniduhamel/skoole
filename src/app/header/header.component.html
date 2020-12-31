@@ -2,16 +2,16 @@
   <mat-toolbar-row fxLayoutAlign="space-between center">
     <!-- les elements du menu header -->
     <div fxLayout="row">
-      <button mat-button>
+      <button mat-button routerLink="/home">
         <mat-icon>home</mat-icon>
         <span class="logo">SKOOLE</span>
       </button>
       <div *ngIf="!deviceXs">
-        <button mat-button>COURS</button>
-        <button mat-button>EXERCICES</button>
-        <button mat-button>EXAMENS</button>
-        <button mat-button>CONTACTS</button>
-        <button mat-button>AIDE</button>
+        <button mat-button routerLink="/cours">COURS</button>
+        <button mat-button routerLink="/exercices">EXERCICES</button>
+        <button mat-button routerLink="/examens">EXAMENS</button>
+        <button mat-button routerLink="/contacts">CONTACTS</button>
+        <button mat-button routerLink="/aide">AIDE</button>
       </div>
     </div>
 

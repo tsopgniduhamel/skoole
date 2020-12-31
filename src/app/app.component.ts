@@ -12,6 +12,7 @@ export class AppComponent implements OnInit, OnDestroy {
 
   mediaSub: Subscription;
   deviceXs: boolean;
+  deviceMd: boolean;
 
   constructor(private mediaObserver: MediaObserver) {}
   ngOnInit() {
@@ -21,6 +22,13 @@ export class AppComponent implements OnInit, OnDestroy {
       (result: MediaChange) => {
         console.log(result.mqAlias);
         this.deviceXs = result.mqAlias === 'xs' ? true : false;
+      }
+    );
+    // media query pour les appareils de taille moyenne
+    this.mediaSub = this.mediaObserver.media$.subscribe(
+      (result: MediaChange) => {
+        console.log(result.mqAlias);
+        this.deviceMd = result.mqAlias === 'md' ? true : false;
       }
     );
   }
