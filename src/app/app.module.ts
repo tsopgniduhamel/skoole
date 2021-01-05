@@ -20,9 +20,23 @@ import { ExamensComponent } from './examens/examens.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { AideComponent } from './aide/aide.component';
 import { CoursDetailsComponent } from './cours-details/cours-details.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent, MainComponent, HomeComponent, PageNotFoundComponent, CoursComponent, ExercicesComponent, ExamensComponent, ContactsComponent, AideComponent, CoursDetailsComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    MainComponent,
+    HomeComponent,
+    PageNotFoundComponent,
+    CoursComponent,
+    ExercicesComponent,
+    ExamensComponent,
+    ContactsComponent,
+    AideComponent,
+    CoursDetailsComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -32,6 +46,7 @@ import { CoursDetailsComponent } from './cours-details/cours-details.component';
     MatButtonModule,
     MatIconModule,
     MatListModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
