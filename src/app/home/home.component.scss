@@ -1,6 +1,6 @@
 .top-home {
   // height: 300px;
-  padding: 0px;
+  padding-bottom: 30px;
   background-color: #008036;
   text-align: center;
 }
@@ -8,12 +8,14 @@
   padding: 25px;
   background-color: white;
   border-radius: 0 100px 100px 0;
+  font-weight: bold;
+  font-size: large;
 }
 .get-app-div {
   padding-top: 50px;
   color: white;
   background-color: #008036;
-  padding: 25px;
+  padding-top: 60px;
 }
 .get-app-div button {
   color: #008036;
@@ -30,8 +32,7 @@ input {
   margin-right: 15px;
 }
 .form-control{
-  width: 65%;
+  text-align: center;
+  width: 90%;
 }
-.search-div .btn .btn-outline-success{
-  width: 25%;
-}
+

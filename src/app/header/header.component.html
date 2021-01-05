@@ -1,7 +1,7 @@
-<mat-toolbar color="primary">
-  <mat-toolbar-row fxLayoutAlign="space-between center">
+<!-- <mat-toolbar color="primary"> -->
+  <!-- <mat-toolbar-row fxLayoutAlign="space-between center"> -->
     <!-- les elements du menu header -->
-    <div fxLayout="row">
+    <!-- <div fxLayout="row">
       <button mat-button routerLink="/home">
         <mat-icon>home</mat-icon>
         <span class="logo">SKOOLE</span>
@@ -13,10 +13,10 @@
         <button mat-button routerLink="/contacts">CONTACTS</button>
         <button mat-button routerLink="/aide">AIDE</button>
       </div>
-    </div>
+    </div> -->
 
     <!-- les boutons de connection et d'inscription -->
-    <div>
+    <!-- <div>
       <button mat-raised-button color="accent" *ngIf="!deviceXs">
         Se connecter
       </button>
@@ -26,14 +26,54 @@
       <button mat-icon-button *ngIf="deviceXs">
         <mat-icon>more_vert</mat-icon>
       </button>
-    </div>
-  </mat-toolbar-row>
+    </div> -->
+  <!-- </mat-toolbar-row> -->
 
-  <mat-toolbar-row *ngIf="deviceXs" fxLayoutAlign="space-between end">
+  <!-- <mat-toolbar-row *ngIf="deviceXs" fxLayoutAlign="space-between end">
     <button mat-button>Cours</button>
     <button mat-button>Exercices</button>
     <button mat-button>Examens</button>
     <button mat-button>Contacts</button>
     <button mat-button>Aide</button>
-  </mat-toolbar-row>
-</mat-toolbar>
+  </mat-toolbar-row> -->
+<!-- </mat-toolbar> -->
+
+
+<nav class="navbar navbar-expand-lg">
+  <a class="navbar-brand" routerLink="/home">
+    <button mat-button routerLink="/home">
+      <mat-icon>home</mat-icon>
+      <span class="logo">SKOOLE</span>
+    </button>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <button mat-button routerLink="/cours">COURS</button>
+      </li>
+      <li class="nav-item">
+        <button mat-button routerLink="/exercices">EXERCICES</button>
+      </li>
+      <li class="nav-item dropdown">
+        <button mat-button routerLink="/examens">EXAMENS</button>
+      </li>
+      <li class="nav-item">
+        <button mat-button routerLink="/contacts">CONTACTS</button>
+      </li>
+      <li class="nav-item">
+        <button mat-button routerLink="/aide">AIDE</button>
+      </li>
+      <li class="nav-item">
+        <button mat-button>Se connecter</button>
+      </li>
+      <li class="nav-item">
+        <button mat-button>S'inscrire</button>
+      </li>
+    </ul>
+  </div>
+</nav>
+
