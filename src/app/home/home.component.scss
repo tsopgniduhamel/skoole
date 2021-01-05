@@ -1,0 +1,37 @@
+.top-home {
+  // height: 300px;
+  padding: 0px;
+  background-color: #008036;
+  text-align: center;
+}
+.search-div {
+  padding: 25px;
+  background-color: white;
+  border-radius: 0 100px 100px 0;
+}
+.get-app-div {
+  padding-top: 50px;
+  color: white;
+  background-color: #008036;
+  padding: 25px;
+}
+.get-app-div button {
+  color: #008036;
+  font-weight: bold;
+}
+input {
+  margin-right: 20px;
+  margin-left: 50px;
+}
+.popular {
+  margin-top: 15px;
+}
+.popular button{
+  margin-right: 15px;
+}
+.form-control{
+  width: 65%;
+}
+.search-div .btn .btn-outline-success{
+  width: 25%;
+}
