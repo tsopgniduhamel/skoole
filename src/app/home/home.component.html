@@ -26,11 +26,10 @@
 
 <div class="main-home">
   <h1 class="text-center">CHOISIS TA CLASSE POUR COMMENCER</h1>
-  <ul class="list-group">
-    <li *ngFor="let cours of courses" class="list-group-item d-flex justify-content-between align-items-center">
-      {{cours.title}}
-      <span class="badge badge-primary badge-pill">{{cours.rating}}</span>
-    </li>
-  </ul>
+    <div style="display:inline" *ngFor="let classe of classes">
+      {{classe.id}} <br>
+      {{classe.name}} <br>
+      {{classe.abbrev}} <br>
+    </div>
   <h1 class="text-center">RESSOURCES POUR LE PRIMAIRE</h1>
 </div>
