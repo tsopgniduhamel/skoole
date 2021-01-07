@@ -25,11 +25,59 @@
 </div>
 
 <div class="main-home">
-  <h1 class="text-center">CHOISIS TA CLASSE POUR COMMENCER</h1>
-    <div style="display:inline" *ngFor="let classe of classes">
-      {{classe.id}} <br>
-      {{classe.name}} <br>
-      {{classe.abbrev}} <br>
+  <span class="h3 text-center">CHOISIS TA CLASSE POUR COMMENCER</span>
+    <div class="liste-classes" *ngFor="let classe of classes">
+      <div class="classe text-center">
+        <button mat-flat-button>
+          <mat-card>
+            <mat-card-title>
+              {{classe.abbrev}}
+            </mat-card-title>
+            <mat-card-content>
+              {{classe.name}}
+            </mat-card-content>
+          </mat-card>
+        </button>
+      </div>
     </div>
-  <h1 class="text-center">RESSOURCES POUR LE PRIMAIRE</h1>
+  <span class="h3 text-center">RESSOURCES POUR LE PRIMAIRE</span>
+  <div class="liste-ressources-primaire">
+    <div class="classe text-center">
+      <button mat-flat-button>
+        <mat-card>
+          <mat-card-title>
+            <span class="mat-h1">M</span>
+          </mat-card-title>
+          <mat-card-content>
+            <span>Mathématiques</span>
+          </mat-card-content>
+        </mat-card>
+      </button>
+    </div>
+    <div class="classe text-center">
+      <button mat-flat-button>
+        <mat-card>
+          <mat-card-title>
+            <span class="mat-h1">A</span>
+          </mat-card-title>
+          <mat-card-content>
+            <span>Anglais</span>
+          </mat-card-content>
+        </mat-card>
+      </button>
+    </div>
+    <div class="classe text-center">
+      <button mat-flat-button>
+        <mat-card>
+          <mat-card-title>
+            <span class="mat-h1">F</span>
+          </mat-card-title>
+          <mat-card-content>
+            <span>Français</span>
+          </mat-card-content>
+        </mat-card>
+      </button>
+    </div>
+  </div>
+
 </div>

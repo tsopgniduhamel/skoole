@@ -1,6 +1,6 @@
 .top-home {
   // height: 300px;
-  padding-bottom: 30px;
+  // padding-bottom: 30px;
   background-color: #008036;
   text-align: center;
 }
@@ -29,10 +29,19 @@ input {
   margin-top: 15px;
 }
 .popular button{
-  margin-right: 15px;
+  margin: 5px;
 }
 .form-control{
   text-align: center;
   width: 90%;
 }
 
+.main-home {
+  padding: 50px;
+}
+
+.classe button {
+  width: 150px;
+  height: 150px;
+  display: inline;
+}

@@ -21,6 +21,7 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { AideComponent } from './aide/aide.component';
 import { CoursDetailsComponent } from './cours-details/cours-details.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatIconModule,
     MatListModule,
     HttpClientModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
