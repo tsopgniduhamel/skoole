@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/', pathMatch: 'full' },
+  { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'cours', component: CoursComponent },
   { path: 'exercices', component: ExercicesComponent },
