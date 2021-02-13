@@ -22,6 +22,7 @@ import { AideComponent } from './aide/aide.component';
 import { CoursDetailsComponent } from './cours-details/cours-details.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MatCardModule } from '@angular/material/card';
+import { ClasseComponent } from './classe/classe.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { MatCardModule } from '@angular/material/card';
     ContactsComponent,
     AideComponent,
     CoursDetailsComponent,
+    ClasseComponent,
   ],
   imports: [
     BrowserModule,

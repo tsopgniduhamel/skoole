@@ -7,6 +7,7 @@ import { ExercicesComponent } from './exercices/exercices.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { AideComponent } from './aide/aide.component';
 import { HomeComponent } from './home/home.component';
+import { ClasseComponent } from './classe/classe.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/', pathMatch: 'full' },
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'examens', component: ExamensComponent },
   { path: 'contacts', component: ContactsComponent },
   { path: 'aide', component: AideComponent },
+  { path: 'classe/:id', component: ClasseComponent },
   { path: '**', component: PageNotFoundComponent },
 ];
 
