@@ -25,7 +25,7 @@
 </div>
 
 <div class="main-home">
-  <span class="h3 text-center">CHOISIS TA CLASSE POUR COMMENCER</span>
+  <!--
     <div class="liste-classes" *ngFor="let classe of classes">
       <div class="classe text-center">
         <button mat-flat-button>
@@ -39,44 +39,22 @@
           </mat-card>
         </button>
       </div>
+    </div> -->
+
+  <div class="liste-classe text-center">
+    <h3>CHOISIS TA CLASSE POUR COMMENCER</h3>
+    <div class="wrap">
+      <a routerLink='/cours'><div class="box btn btn-info" *ngFor="let classe of classes">{{classe.name}}</div></a>
     </div>
-  <span class="h3 text-center">RESSOURCES POUR LE PRIMAIRE</span>
-  <div class="liste-ressources-primaire">
-    <div class="classe text-center">
-      <button mat-flat-button>
-        <mat-card>
-          <mat-card-title>
-            <span class="mat-h1">M</span>
-          </mat-card-title>
-          <mat-card-content>
-            <span>Mathématiques</span>
-          </mat-card-content>
-        </mat-card>
-      </button>
-    </div>
-    <div class="classe text-center">
-      <button mat-flat-button>
-        <mat-card>
-          <mat-card-title>
-            <span class="mat-h1">A</span>
-          </mat-card-title>
-          <mat-card-content>
-            <span>Anglais</span>
-          </mat-card-content>
-        </mat-card>
-      </button>
-    </div>
-    <div class="classe text-center">
-      <button mat-flat-button>
-        <mat-card>
-          <mat-card-title>
-            <span class="mat-h1">F</span>
-          </mat-card-title>
-          <mat-card-content>
-            <span>Français</span>
-          </mat-card-content>
-        </mat-card>
-      </button>
+  </div>
+
+
+  <div class="liste-ressources text-center">
+    <h3>RESSOURCES POUR LE PRIMAIRE</h3>
+    <div class="wrap">
+      <a routerLink='/cours'><div class="box btn btn-primary">Mathématiques</div></a>
+      <a routerLink='/cours'><div class="box btn btn-success">Français</div></a>
+      <a routerLink='/cours'><div class="box btn btn-danger">Anglais</div></a>
     </div>
   </div>
 
