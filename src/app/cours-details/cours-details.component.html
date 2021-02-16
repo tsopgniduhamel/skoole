@@ -2,7 +2,23 @@
   <div class="row">
     <!-- section reservée pour les details du cours -->
     <div class="col-md-9">
-      <h1>{{coursactuel.title}}</h1>
+      <!-- titre du cours -->
+      <div class="row">
+        <h1>{{coursactuel.title}}</h1>
+      </div>
+
+      <!-- video du cours -->
+      <div class="row">
+        <video width="100%" height="100%" controls>
+          <source src="coursactuel.video" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- zone pour le markdown du cours -->
+      <div class="row">
+
+      </div>
     </div>
 
     <!-- section reservée au nom de l'auteur du cours et aux commentaires -->
