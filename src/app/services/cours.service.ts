@@ -12,4 +12,8 @@ export class CoursService {
   getAllCourses() {
     return this.http.get(this.apiUrl + `api/course`);
   }
+
+  getCourse(id: string) {
+    return this.http.get(this.apiUrl + `api/course/` + id);
+  }
 }
