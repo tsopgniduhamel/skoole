@@ -10,6 +10,7 @@ import { ClassesService } from './../services/classes.service';
 export class HomeComponent implements OnInit {
   courses: any;
   classes: any;
+  currentClasse: '';
 
   constructor(
     private courseService: CoursService,
@@ -34,4 +35,6 @@ export class HomeComponent implements OnInit {
       console.log(this.classes);
     });
   }
+
+  setGlobalsCurrentClass() {}
 }
